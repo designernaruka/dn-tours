@@ -115,9 +115,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   text-decoration: none;
 }
+.top-nav {
+  background-color: #F9F9F9;
+}
 
 #main {
-  margin-left: 300px;
+  margin-left: 80px;
 }
 
 @media (max-width: 1199px) {
@@ -127,6 +130,53 @@ h1, h2, h3, h4, h5, h6 {
   #main {
     margin-left: 0;
   }
+}
+
+/* Drop Down Animation */
+/* Change this breakpoint if you change the breakpoint of the navbar */
+
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
 }
 
 /*--------------------------------------------------------------
@@ -152,11 +202,28 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   color: #a8a9b4;
-  padding: 24px 15px;
-  margin-bottom: 8px;
+  padding: 15px 15px 15px 13px;
   transition: 0.3s;
   font-size: 15px;
   text-align: center;
+  opacity: 0.3;
+  position: relative;
+}
+.nav-menu a:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background-color: transparent;
+  left: 0px;
+  top: 0px;
+}
+
+.nav-menu > ul > li.active a {
+  opacity: 1;
+}
+.nav-menu > ul > li.active a:before {
+  background-color: #A82900;
 }
 
 .nav-menu a i {
@@ -203,6 +270,37 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
+}
+
+.profile-link {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background-color: #D8D8D8;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.profile-link img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.dropdown-toggle:after {
+  display: none;
+}
+
+/* Tours Category listing */
+.tour-category h2 {
+  font-family: sans-serif;
+  padding: 2rem 0;
+}
+.swipe-icons {
+  padding-bottom: 10px;
+}
+.swipe-icons a {
+  color: #A82900;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 /*--------------------------------------------------------------
