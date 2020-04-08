@@ -227,7 +227,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a i {
-  height: 16px;
+  font-size: 24px;
   width: 100%;
 }
 
@@ -290,19 +290,69 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Tours Category listing */
-.tour-category h2 {
+.tour-category h3 {
   font-family: sans-serif;
-  padding: 2rem 0;
+  padding: 0;
+  font-size: 1.3rem;
+  margin: 0px;
+  font-weight: 700;
 }
 .swipe-icons {
-  padding-bottom: 10px;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
 }
 .swipe-icons a {
   color: #A82900;
   display: inline-block;
-  margin-left: 10px;
+  font-size: 0.8rem;
 }
-
+.swipe-icons a i {
+  font-size: 1.2rem;
+}
+.tour-category-tile {
+  display: block;
+  margin-bottom: 32px;
+}
+.tour-category-tile img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+.tour-category-tile:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(246, 245, 252, 0.7);
+  z-index: 3;
+}
+.tour-category-tile .tour-decription {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  padding: 1rem;
+  color: #24253D;
+  font-weight: 600;
+  z-index: 5;
+  transform: translate(0.7);
+  transition: all 900ms;
+}
+.tour-category-tile:hover .tour-decription {
+  color: #A82900;
+}
+.category-type {
+  font-weight: lighter;
+  display: block;
+  width: 100%;
+}
+.tour-by-destination .tour-category-tile:after {
+  display: none;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
