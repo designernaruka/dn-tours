@@ -392,6 +392,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .current-offer-form form {
   margin-top: 1.2rem;
+  padding-bottom: 1.2rem;
 }
 .current-offer-form form .form-group {
   -moz-border-radius: 8px;
@@ -417,6 +418,17 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
   background-color: #D6D6D6;
   border: none;
+}
+.current-offer-form button {
+  -moz-border-radius: 25px 0 0 25px;
+  -webkit-border-radius: 25px 0 0 25px;
+  background-color: #A82900 !important;
+  border-color: #fff !important;
+  border-radius: 25px 0 0 25px;
+  width: 50%;
+}
+.current-offer-form button.disabled {
+  background-color: rgba(168,41,0,0.50) !important;
 }
 /*--------------------------------------------------------------
 # Hero Section
