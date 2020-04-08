@@ -72,7 +72,7 @@
           <div class="navbar-brand">
             <img src="assets/img/logo.svg" alt="" class="img-fluid border-0">
           </div>
-          <div class="d-xl-center" id="navbarSupportedContent">
+          <div class="d-xl-center d-none" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle profile-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -96,6 +96,7 @@
           <div class="col-md-4">
             <div class="current-offer-form">
               <div class="col-md-12">
+                <!-- Form Search Flight -->
                 <div class="clearfix">
                   <h1>
                     Where to next?
@@ -110,7 +111,7 @@
                       </nav>
                       <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="nav-roundtrip" role="tabpanel" aria-labelledby="nav-roundtrip-tab">
-                          <form action="forms/contact.php" method="post" role="form" class="php-email-form col-md-12">
+                          <form action="forms/contact.php" method="post" role="form" class="php-email-form book-flight">
                             <div class="form-row">
                               <div class="form-group col-md-12">
                                 <label for="starting from">From</label>
@@ -148,8 +149,250 @@
                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">second</div>
                       </div>
                     </div>
+
                   </div>
                 </div>
+                <!-- Form Search End -->
+                <!-- Popular Flight Routes From Start -->
+                <div class="clearfix mb-3">
+                  <div class="d-flex justify-content-between bd-highlight">
+                    <div>
+                      <h2>Popular Flight Routes From </h2>
+                    </div>
+                    <div>
+                      <div class="d-flex justify-content-between bd-highlight next-tour-swipe">
+                        <a href="#" class="nav-link p-0">
+                          <i class="icofont-rounded-left"></i>
+                        </a>
+                        <a href="#" class="nav-link p-0">
+                          <i class="icofont-rounded-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <nav class="nav-popular-tour">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link active" id="nav-tripofferone-tab" data-toggle="tab" href="#nav-tripofferone" role="tab" aria-controls="nav-tripofferone" aria-selected="true">NEW DELHI</a>
+                      <a class="nav-item nav-link" id="nav-tripoffersecond-tab" data-toggle="tab" href="#nav-tripoffersecond" role="tab" aria-controls="nav-tripoffersecond" aria-selected="false">MUMBAI</a>
+                      <a class="nav-item nav-link" id="nav-tripofferthird-tab" data-toggle="tab" href="#nav-tripofferthird" role="tab" aria-controls="nav-tripofferthird" aria-selected="false">
+                        OTHERS
+                      </a>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-tripofferone" role="tabpanel" aria-labelledby="nav-tripofferone-tab">
+                      <div class="popular-tour">
+                        <div class="col-md-12">
+                          <div class="d-flex justify-content-between bd-highlight mb-3">
+                            <div class="align-self-center">
+                              <div class="starting-point">New Delhi <span> DEL</span></div>
+                              <div class="starting-time">06:40</div>
+                            </div>
+                            <div class="align-self-center flex-grow-2 position-relative runway-line">
+                              <div class="text-center">
+                                <i class="icofont-airplane"></i>
+                              </div>
+                            </div>
+                            <div class="align-self-center">
+                              <div class="starting-point">Bengaluru <span> BLR</span></div>
+                              <div class="starting-time">09:35</div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between bd-highlight">
+                            <div class="align-self-center">
+                              <div class="starting-cost">Starting From</div>
+                              <div class="starting-fare">₹ 8999</div>
+                            </div>
+                            <div class="align-self-center">
+                              <button type="button" class="btn btn-primary btn-book">Book Now</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade show" id="nav-tripoffersecond" role="tabpanel" aria-labelledby="nav-tripoffersecond-tab">
+                      <div class="popular-tour">
+                        <div class="col-md-12">
+                          <div class="d-flex justify-content-between bd-highlight mb-3">
+                            <div class="align-self-center">
+                              <div class="starting-point">Mumbai <span> Mum</span></div>
+                              <div class="starting-time">06:40</div>
+                            </div>
+                            <div class="align-self-center flex-grow-2 position-relative runway-line">
+                              <div class="text-center">
+                                <i class="icofont-airplane"></i>
+                              </div>
+                            </div>
+                            <div class="align-self-center">
+                              <div class="starting-point">Bengaluru <span> BLR</span></div>
+                              <div class="starting-time">09:35</div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between bd-highlight">
+                            <div class="align-self-center">
+                              <div class="starting-cost">Starting From</div>
+                              <div class="starting-fare">₹ 8999</div>
+                            </div>
+                            <div class="align-self-center">
+                              <button type="button" class="btn btn-primary btn-book">Book Now</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade show" id="nav-tripofferthird" role="tabpanel" aria-labelledby="nav-tripofferthird-tab">
+                      <div class="popular-tour">
+                        <div class="col-md-12">
+                          <div class="d-flex justify-content-between bd-highlight mb-3">
+                            <div class="align-self-center">
+                              <div class="starting-point">Others <span> DEL</span></div>
+                              <div class="starting-time">06:40</div>
+                            </div>
+                            <div class="align-self-center flex-grow-2 position-relative runway-line">
+                              <div class="text-center">
+                                <i class="icofont-airplane"></i>
+                              </div>
+                            </div>
+                            <div class="align-self-center">
+                              <div class="starting-point">Bengaluru <span> BLR</span></div>
+                              <div class="starting-time">09:35</div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between bd-highlight">
+                            <div class="align-self-center">
+                              <div class="starting-cost">Starting From</div>
+                              <div class="starting-fare">₹ 8999</div>
+                            </div>
+                            <div class="align-self-center">
+                              <button type="button" class="btn btn-primary btn-book">Book Now</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Form Popular Flight Routes End -->
+                <!-- Popular Domestic Holiday From Start -->
+                <div class="clearfix">
+                  <div class="d-flex justify-content-between bd-highlight">
+                    <div>
+                      <h2>Popular Domestic Holiday From</h2>
+                    </div>
+                    <div>
+                      <div class="d-flex justify-content-between bd-highlight next-tour-swipe">
+                        <a href="#" class="nav-link p-0">
+                          <i class="icofont-rounded-left"></i>
+                        </a>
+                        <a href="#" class="nav-link p-0">
+                          <i class="icofont-rounded-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <nav class="nav-popular-tour">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link active" id="nav-packageofferone-tab" data-toggle="tab" href="#nav-packageofferone" role="tab" aria-controls="nav-packageofferone" aria-selected="true">Goa</a>
+                      <a class="nav-item nav-link" id="nav-packageoffersecond-tab" data-toggle="tab" href="#nav-packageoffersecond" role="tab" aria-controls="nav-packageoffersecond" aria-selected="false">Delhi</a>
+                      <a class="nav-item nav-link" id="nav-packageofferthird-tab" data-toggle="tab" href="#nav-packageofferthird" role="tab" aria-controls="nav-packageofferthird" aria-selected="false">
+                        Agra
+                      </a>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-packageofferone" role="tabpanel" aria-labelledby="nav-packageofferone-tab">
+                      <div class="popular-tour">
+                        <div class="col-md-12">
+                          <div class="d-flex justify-content-between bd-highlight mb-3">
+                            <div class="align-self-center">
+                              <div class="starting-point">Best of Goa</div>
+                              <div class="starting-time">06:40</div>
+                            </div>
+                            <div class="align-self-center flex-grow-2 position-relative runway-line">
+                              <div class="text-center">
+                                <i class="icofont-airplane"></i>
+                              </div>
+                            </div>
+                            <div class="align-self-center">
+                              <div class="starting-point">Package Itinerary</div>
+                              <div class="starting-time">New Delhi</div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between bd-highlight">
+                            <div class="align-self-center">
+                              <div class="starting-cost">Starting From</div>
+                              <div class="starting-fare">₹ 8999</div>
+                            </div>
+                            <div class="align-self-center">
+                              <button type="button" class="btn btn-primary btn-book">Book Now</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade show" id="nav-packageoffersecond" role="tabpanel" aria-labelledby="nav-packageoffersecond-tab">
+                      <div class="popular-tour">
+                        <div class="col-md-12">
+                          <div class="d-flex justify-content-between bd-highlight mb-3">
+                            <div class="align-self-center">
+                              <div class="starting-point">New Delhi</div>
+                              <div class="starting-time">06:40</div>
+                            </div>
+                            <div class="align-self-center flex-grow-2 position-relative runway-line">
+                              <div class="text-center">
+                                <i class="icofont-airplane"></i>
+                              </div>
+                            </div>
+                            <div class="align-self-center">
+                              <div class="starting-point">Package Itinerary</div>
+                              <div class="starting-time">New Delhi</div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between bd-highlight">
+                            <div class="align-self-center">
+                              <div class="starting-cost">Starting From</div>
+                              <div class="starting-fare">₹ 8999</div>
+                            </div>
+                            <div class="align-self-center">
+                              <button type="button" class="btn btn-primary btn-book">Book Now</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade show" id="nav-packageofferthird" role="tabpanel" aria-labelledby="nav-packageofferthird-tab">
+                      <div class="popular-tour">
+                        <div class="col-md-12">
+                          <div class="d-flex justify-content-between bd-highlight mb-3">
+                            <div class="align-self-center">
+                              <div class="starting-point">Agra</div>
+                              <div class="starting-time">06:40</div>
+                            </div>
+                            <div class="align-self-center flex-grow-2 position-relative runway-line">
+                              <div class="text-center">
+                                <i class="icofont-airplane"></i>
+                              </div>
+                            </div>
+                            <div class="align-self-center">
+                              <div class="starting-point">Package Itinerary</div>
+                              <div class="starting-time">New Delhi</div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between bd-highlight">
+                            <div class="align-self-center">
+                              <div class="starting-cost">Starting From</div>
+                              <div class="starting-fare">₹ 8999</div>
+                            </div>
+                            <div class="align-self-center">
+                              <button type="button" class="btn btn-primary btn-book">Book Now</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Popular Domestic Holiday From End -->
               </div>
             </div>
           </div>

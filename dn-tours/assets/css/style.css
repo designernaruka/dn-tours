@@ -301,10 +301,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
 }
-.swipe-icons a {
+.swipe-icons a,
+.next-tour-swipe a {
   color: #A82900;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 .swipe-icons a i {
   font-size: 1.2rem;
@@ -357,6 +358,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #F9F9F9;
   box-shadow: 0 0 10px 1px rgba(0,0,0,0.50);
   border-radius: 5px;
+  padding-bottom: 1.3rem;
 }
 .current-offer-form h1 {
   padding: 1rem 0;
@@ -367,6 +369,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem 0;
   font-size: 1rem;
   font-weight: 700;
+  padding: 0;
 }
 .tab-search-flight .nav-tabs {
   -moz-border-radius: 20px !important;
@@ -386,13 +389,23 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   width: 50%;
 }
+.tab-search-flight a:hover {
+  border-color: transparent !important;
+}
 .current-offer-form .tab-search-flight a.active {
   background-color: #A82900;
   color: #fff;
+  border-color: transparent !important;
+}
+.tab-search-flight .nav-tabs .nav-item {
+  margin: 0px !important;
 }
 .current-offer-form form {
   margin-top: 1.2rem;
   padding-bottom: 1.2rem;
+}
+.current-offer-form .form-row {
+  margin: 0px !important;
 }
 .current-offer-form form .form-group {
   -moz-border-radius: 8px;
@@ -419,7 +432,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #D6D6D6;
   border: none;
 }
-.current-offer-form button {
+.book-flight button {
   -moz-border-radius: 25px 0 0 25px;
   -webkit-border-radius: 25px 0 0 25px;
   background-color: #A82900 !important;
@@ -429,6 +442,113 @@ h1, h2, h3, h4, h5, h6 {
 }
 .current-offer-form button.disabled {
   background-color: rgba(168,41,0,0.50) !important;
+}
+.popular-tour {
+  background-color: #EDEDED;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+.nav-popular-tour .nav-tabs {
+  border: none !important;
+  padding-bottom: 0.9rem;
+}
+.nav-popular-tour .nav-tabs .nav-link {
+  background-color: transparent;
+  border: none;
+  font-size: 0.9rem;
+  padding: 0;
+  margin-right: 0.9rem;
+  color: #8E8F9B;
+  position: relative;
+}
+.nav-popular-tour .nav-tabs .nav-link:before {
+  content: '';
+  width: 40%;
+  position: absolute;
+  background-color: transparent;
+  height: 2px;
+  bottom: -1px;
+  left: 0;
+}
+.nav-popular-tour .nav-tabs .nav-link:hover {
+  text-decoration: underline;
+}
+.nav-popular-tour .nav-tabs .nav-link.active {
+  color: #24253D;
+  background-color: transparent !important;
+  border: none !important;
+}
+.nav-popular-tour .nav-tabs .nav-link.active:before {
+  background-color: #A82900;
+}
+.nav-popular-tour .nav-tabs .nav-link:hover.active {
+  text-decoration: none !important;
+}
+.popular-tour {
+  color: #24253D;
+}
+.starting-point {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+.starting-time {
+  font-weight: 600;
+}
+.starting-point span {
+  color: #8E8F9B;
+  font-weight: lighter;
+}
+.starting-cost {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+.starting-fare {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.btn-book {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  background-color: #C8C8C8 !important;
+  border-color: #C8C8C8;
+  border-radius: 8px;
+  color: #24253D;
+}
+.btn-book:hover {
+  background-color: #C8C8C8 !important;
+  border-color: #C8C8C8;
+  color: #A82900;
+}
+.runway-line {
+  width: 42%;
+  margin-top: -12px;
+  border-bottom: solid 2px #E0E0E1;
+  font-size: 22px;
+}
+.runway-line > div {
+  position: absolute;
+  left: calc(50% - 11px);
+  top: calc(50% - 16px);
+  transform: rotate(90deg);
+  z-index: 5;
+}
+.runway-line > div i {
+  z-index: 8;
+  position: relative;
+}
+.runway-line > div:after {
+  background-color: #EDEDED;
+  border-radius: 50%;
+  content: '';
+  height: 34px;
+  left: calc(50% - 17px);
+  position: absolute;
+  top: calc(50% - 17px);
+  width: 34px;
+  z-index: 3;
 }
 /*--------------------------------------------------------------
 # Hero Section
