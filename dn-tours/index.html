@@ -91,10 +91,68 @@
           </div>
         </nav>
       </div>
-      <div class="container-fluid">
+      <div class="container-fluid mt-2">
         <div class="row">
           <div class="col-md-4">
-            Left form
+            <div class="current-offer-form">
+              <div class="col-md-12">
+                <div class="clearfix">
+                  <h1>
+                    Where to next?
+                  </h1>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <nav class="tab-search-flight">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                          <a class="nav-item nav-link active" id="nav-roundtrip-tab" data-toggle="tab" href="#nav-roundtrip" role="tab" aria-controls="nav-roundtrip" aria-selected="true">Roundtrip</a>
+                          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">One way</a>
+                        </div>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-roundtrip" role="tabpanel" aria-labelledby="nav-roundtrip-tab">
+                          <form action="forms/contact.php" method="post" role="form" class="php-email-form col-md-12">
+                            <div class="form-row">
+                              <div class="form-group col-md-12">
+                                <label for="name">From</label>
+                                <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" value="Starting From" data-msg="Please enter at least 4 chars" />
+                                <div class="validate"></div>
+                              </div>
+                              <div class="form-group col-md-12">
+                                <label for="name">To</label>
+                                <input type="email" class="form-control" name="email" id="email" data-rule="email" value="Going to" data-msg="Please enter a valid email" />
+                                <div class="validate"></div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="name">Subject</label>
+                              <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                              <div class="validate"></div>
+                            </div>
+                            <div class="form-group">
+                              <label for="name">Message</label>
+                              <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                              <div class="validate"></div>
+                            </div>
+                            <div class="mb-3">
+                              <div class="loading">Loading</div>
+                              <div class="error-message"></div>
+                              <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-center"><button type="submit">Send Message</button></div>
+                          </form>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">second</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <h2>Popular Flight Routes From </h2>
+                </div>
+                <div class="clearfix">third</div>
+              </div>
+            </div>
           </div>
           <div class="col-md-8 tour-category">
             <h3>Discover Category : Types of tourism</h3>

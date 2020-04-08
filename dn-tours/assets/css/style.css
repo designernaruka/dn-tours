@@ -353,6 +353,71 @@ h1, h2, h3, h4, h5, h6 {
 .tour-by-destination .tour-category-tile:after {
   display: none;
 }
+.current-offer-form {
+  background: #F9F9F9;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.50);
+  border-radius: 5px;
+}
+.current-offer-form h1 {
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.current-offer-form h2 {
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.tab-search-flight .nav-tabs {
+  -moz-border-radius: 20px !important;
+  -webkit-border-radius: 20px !important;
+  background-color: #EDEDED;
+  border-radius: 20px !important;
+  border: none;
+}
+.tab-search-flight a {
+  -moz-border-radius: 20px !important;
+  -webkit-border-radius: 20px !important;
+  background-color: #EDEDED;
+  border-radius: 20px !important;
+  border: none;
+  color: #24253D;
+  font-size: 0.9rem;
+  text-align: center;
+  width: 50%;
+}
+.current-offer-form .tab-search-flight a.active {
+  background-color: #A82900;
+  color: #fff;
+}
+.current-offer-form form {
+  margin-top: 1.2rem;
+}
+.current-offer-form form .form-group {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  background-color: #EDEDED;
+  border-radius: 8px;
+  padding: 0.4rem 0.9rem;
+}
+.current-offer-form form label {
+  color: #888995;
+  font-size: 0.8rem;
+  margin: 0;
+}
+.current-offer-form form input {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  height: auto;
+}
+.current-offer-form form input:focus {
+  outline: none;
+  background-color: #D6D6D6;
+  border: none;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
